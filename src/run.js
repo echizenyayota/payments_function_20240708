@@ -21,7 +21,7 @@ const NO_CHANGES = {
 export function run(input) {
   // Get the cart total from the function input, and return early if it's below 100
   const cartTotal = parseFloat(input.cart.cost.totalAmount.amount ?? "0.0");
-  if (cartTotal >= 100) {
+  if (cartTotal >= 12000) {
     return NO_CHANGES;
   } else {
     console.error("Cart total is not high enough, and you don't need to hide the payment method.");
